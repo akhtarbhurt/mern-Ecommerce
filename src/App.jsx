@@ -3,7 +3,7 @@ import Counter from './redux/Counter'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
  import Adminhome from './admin/pages/Adminhome';
 import './App.css'
-import Contactus from './admin/pages/Contactus';
+
 import AdminBanner from './admin/pages/AdminBanner';
 import Adminbanneridedit from './admin/pages/Adminbanneridedit';
 import Adminbannercreate from './admin/pages/Adminbannercreate';
@@ -38,6 +38,12 @@ import Adminusercreate from './admin/pages/Adminusercreate';
 import Adminuseridedit from './admin/pages/adminuseredit';
 import Adminsetting from './admin/pages/Adminsetting';
 import Adminpostidedit from './admin/pages/Adminpostidedit';
+import Adminpostcategoryidedit from './admin/pages/Adminpostcategoryidedit';
+import Adminposttagidedit from './admin/pages/Adminposttagidedit';
+import Home from './public/pages/Home';
+import Aboutus from './public/pages/Aboutus';
+import Contactus from './public/pages/Contactus';
+import Products from './public/pages/Products';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -46,7 +52,7 @@ function App() {
     <>
   <BrowserRouter>
   <Routes>
-  <Route path="/" element={<Adminhome/>} />
+  <Route path="/" element={< Home/>} />
   <Route path='/homedashboard' element={< Adminhome/>} />
   <Route path="/contact" element={<Contactus/>} />
   <Route path="/admin/banner" element={<AdminBanner/>} />
@@ -75,8 +81,12 @@ function App() {
 
   <Route path='/admin/post/create' element={< Adminpostcreate/>} />
   <Route path='/admin/post/category' element={< Adminpostcategory/>} />
+  <Route path='/admin/post/category/id/edit' element={< Adminpostcategoryidedit/>} />
+
   <Route path='/admin/post/category/create' element={< Adminpostcategorycreate/>} />
   <Route path='/admin/posttag' element={< Adminposttag/>} />
+  <Route path='/admin/posttag/id/edit' element={< Adminposttagidedit/>} />
+
   <Route path='/admin/posttag/create' element={< Adminposttagcreate/>} />
   <Route path='/admin/postcomment' element={< Admincomment/>} />
   <Route path='/admin/coupon' element={< Admincoupon/>} />
@@ -86,6 +96,15 @@ function App() {
   <Route path='/admin/user/create' element={< Adminusercreate/>} />
   <Route path='/admin/user/id/edit' element={< Adminuseridedit/>} />
   <Route path='/admin/setting' element={< Adminsetting/>} />
+
+
+
+{/* ======================public pages============= */}
+
+<Route path='/aboutus' element={< Aboutus/>} />
+<Route path='/contactus' element={<Contactus />} />
+
+<Route path='/product' element={<Products />} />
 
   </Routes>
   </BrowserRouter>  

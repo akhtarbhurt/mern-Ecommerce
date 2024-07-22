@@ -10,8 +10,8 @@ export default {
         'xs':'320px',  // extra small
         'sm': '640px', // Small screens
         'md': '768px', // Medium screens
-        'lg': '1024px', // Large screens
-        'xl': '1280px', // Extra-large screens
+        'lg': '992px', // Large screens
+        'xl': '1024px', // Extra-large screens
       },
     },
   },

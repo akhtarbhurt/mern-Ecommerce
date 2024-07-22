@@ -10,11 +10,8 @@ import { PiGreaterThanBold } from "react-icons/pi";
 import { useSelector } from 'react-redux';
 import Admindasjboardcomponents from "../components/Admindasjboardcomponents";
 import AdminNavbar from "../components/AdminNavbar";
-import Copyright from './Copyright';
 
-const Adminpostcategorycreate = () => {
-  
-
+const Adminposttagidedit = () => {
 
 
   const collapsed = useSelector((state) => state.counter.collapsed);
@@ -49,7 +46,7 @@ const Adminpostcategorycreate = () => {
             <div className='w-full mt-9 flex justify-center  allorders bg-[#f6f8fb]'>
                 <div className='w-full mt-2 border-[2px] rounded-md mb-3 bg-white'>
                     <div className='flex justify-between p-5 border-b-[1px] '>
-                        <div className='font-sans font-medium text-gray-700 text-[21px]'>Add Post Category </div>
+                        <div className='font-sans font-medium text-gray-700 text-[21px]'>Add Post Tag</div>
                        
                     </div>
 <form action="">
@@ -96,10 +93,9 @@ const Adminpostcategorycreate = () => {
 
             </div>
             </div>
-            <Copyright />
       </div>
     </div>
   );
 };
 
-export default Adminpostcategorycreate;
+export default Adminposttagidedit;

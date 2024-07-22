@@ -12,7 +12,7 @@ import Admindasjboardcomponents from "../components/Admindasjboardcomponents";
 import AdminNavbar from "../components/AdminNavbar";
 import Copyright from './Copyright';
 
-const Adminpostcategorycreate = () => {
+const Adminpostcategoryidedit = () => {
   
 
 
@@ -102,4 +102,4 @@ const Adminpostcategorycreate = () => {
   );
 };
 
-export default Adminpostcategorycreate;
+export default Adminpostcategoryidedit;
